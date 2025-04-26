@@ -6,44 +6,55 @@
     <title>Evellyn Nathalia</title>
     
     <style>
-        body{
-            background-color: #f2b1b8;
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        .painel{
+        body {
+            background: linear-gradient(to bottom, #000000,rgb(6, 0, 33), #04013d);
+            min-height: 100%;
+        }
+        h1{
+            color: aliceblue;
+            }
+        h2{
+            color: aliceblue;
+        }
+        .painel {
             margin: auto;
-            background-color: white;
-            width: 500px;
-            height: 500px;
+            background: linear-gradient( rgba(18, 0, 46, 0.241),rgba(155, 155, 244, 0.312));
+            width: 400px;
+            height: 700px;
             border-radius: 20px;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        #sim{
+
+        #sim {
             height: 40px;
             width: 60px;
             background-color: #f2b1b700;
-            border: 1px solid rgb(3, 1, 1);
+            border: 1px solid rgb(255, 255, 255);
             border-radius: 10px;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 254, 250);
             margin-left: -80px;
-            font-family: fantasy;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
         }
-        #nao{
+
+        #nao {
             position: absolute;
             height: 40px;
             width: 60px;
             background-color: #f2b1b700;
-            border: 1px solid rgb(0, 0, 0);
+            border: 1px solid rgb(255, 255, 255);
             border-radius: 10px;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             margin-left: 10px;
-            font-family: fantasy;
-            font-weight: initial;
-        }
-        h6{
-        color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
         }
 
     </style>
@@ -52,14 +63,14 @@
     <div class="painel">
         <h1>Oi Amor da Minha Vida</h1>
         
-        <img src="https://c.tenor.com/AYXxcqfoyn0AAAAM/i-love-you-my-heart.gif" alt="">
+        <img src="imagem/GfTAY4OXgAANzLY.jpg" alt="" width="400" height="500">
         
         <h2>Voce ainda me ama ?</h2>
-
-      <a href="https://open.spotify.com/intl-pt/track/4Yd36tlxYDPfgu9ymsntKX?si=3ffc328549084704"><button id="sim"> Sim! </button></a>
+        
+        <a href="https://open.spotify.com/intl-pt/track/4Yd36tlxYDPfgu9ymsntKX?si=3ffc328549084704">
+            <button id="sim"> Sim! </button>
+        </a>
         <button onmouseover="fuja()" id="nao"> Não! </button>
-
-       
 
     </div>
 
@@ -80,6 +91,5 @@
             botaoNao.style.top = aleatorioY + "px";
         }
     </script>
-
 </body>
 </html>
